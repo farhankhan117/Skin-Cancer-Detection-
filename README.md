@@ -15,7 +15,7 @@ ISIC-formatted submission output
 
 This project replicates a real ISIC challenge workflow and includes data preprocessing, model training, prediction, and submission generation.
 
-📁 Dataset Overview
+# 📁 Dataset Overview
 
 The project uses data from ISIC 2019 and MILK10k:
 
@@ -45,13 +45,13 @@ MONET concept features
 
 image_type (clinical / dermoscopic)
 
-3. Training Supplement
+# 3. Training Supplement
 
 Additional diagnostic details
 
 Shape: 10480 × 4
 
-🔧 Preprocessing Workflow
+# 🔧 Preprocessing Workflow
 1. Merge image paths with metadata
 
 Clinical and dermoscopic images are linked using isic_id.
@@ -83,7 +83,7 @@ MONET features kept as continuous inputs
 Total metadata features = 24
 Final feature count including MONET = 31
 
-🧠 Model Architecture
+# 🧠 Model Architecture
 ✔ Dual EfficientNetV2-S Backbones
 
 One for clinical images
@@ -96,7 +96,7 @@ Fully connected network
 
 ✔ Fusion Layer
 
-Concatenates:
+# Concatenates:
 
 clinical_feats + dermoscopic_feats + metadata
 
@@ -114,7 +114,7 @@ BCEWithLogitsLoss with aggressive class balancing for rare lesions.
 
 Adam(lr=1e-3)
 
-📊 Training Details
+# 📊 Training Details
 
 80/20 train-validation split
 
@@ -138,7 +138,7 @@ BCC, NV, MEL, SCCKA
 
 (Note: ISIC 2019 is highly imbalanced → low F1 is expected without larger training or stronger backbones.)
 
-🧪 Test Inference
+# 🧪 Test Inference
 
 Test set: 479 lesions
 
@@ -175,7 +175,7 @@ No missing values
 
 Probability-scaled outputs
 
-🚀 Project Summary
+# 🚀 Project Summary
 Component	Value
 Total lesions	5164
 Validation lesions	1033
@@ -186,7 +186,7 @@ Diagnosis outputs	11
 Model parameters	40M+
 Best Macro F1	0.2572
 Best Accuracy	75.94%
-📌 Folder Structure
+# 📌 Folder Structure
 /
 ├── data/
 │   ├── train/
