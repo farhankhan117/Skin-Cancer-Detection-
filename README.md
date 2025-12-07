@@ -1,4 +1,4 @@
-🩺## Skin Cancer Detection using Dual EfficientNetV2 + Metadata Fusion
+## Skin Cancer Detection using Dual EfficientNetV2 + Metadata Fusion
 Multi-Label Classification on ISIC 2019 / MILK10k Dataset
 
 This repository contains an end-to-end deep learning pipeline for skin lesion classification using:
