@@ -32,10 +32,6 @@ Ground truth: Hidden (used for leaderboard evaluation)
 
 ## 🧬 Diagnostic Categories (11 Classes)
 
-Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.  
-
-## 🧬 Diagnostic Categories (11 Classes)
-
 Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.
 
 | Abbreviation | Diagnostic Category |
@@ -52,3 +48,27 @@ Each lesion is classified into one of 11 diagnostic categories, and the model ou
 | SCCKA | Squamous cell carcinoma / keratoacanthoma |
 | VASC | Vascular lesions and hemorrhage |
 
+
+## 📥 Input Data Description
+
+Each lesion includes the following components:
+
+### 1️⃣ Dual-Modality Image Pair
+- Clinical close-up image  
+- Dermatoscopic image  
+
+### 2️⃣ MONET Concept Annotations
+Probability scores are provided for:
+- Ulceration / crust  
+- Hair  
+- Vasculature  
+- Erythema  
+- Pigmentation  
+- Gel / dermoscopy liquid  
+- Skin markings (pen ink, purple pen)  
+
+### 3️⃣ Additional Metadata
+- Age (grouped in 5-year intervals)  
+- Sex  
+- Skin tone (0 = very dark → 5 = very light)  
+- Anatomical site  
