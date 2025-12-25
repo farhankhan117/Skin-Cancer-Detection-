@@ -165,6 +165,18 @@ Probability scores are provided for:
 
 ---
 
+
+## ⚙️ Training Setup
+
+- **Framework:** PyTorch  
+- **Loss Function:** BCEWithLogitsLoss (aggressive class weighting)  
+- **Optimizer:** Adam  
+- **Learning Rate:** 1e-3  
+- **Batch Size:** 8  
+- **Image Size:** 256 × 256  
+- **Augmentation:** Flip, rotation, color jitter  
+
+
 ## 📏 Evaluation Metric
 
 ### Primary Metric: Macro F1 Score
@@ -174,7 +186,11 @@ Probability scores are provided for:
 
 ### Thresholding
 - Predictions ≥ 0.5 are considered positive  
-- A lesion may be predicted positive for multiple classes  
+- A lesion may be predicted positive for multiple classes
+
+### Why Macro F1?
+- Treats all classes equally
+- Suitable for imbalanced medical datasets
 
 ---
 
@@ -210,13 +226,23 @@ Probability scores are provided for:
 
 ---
 
-## 📝 Dataset Notes
 
-- Benchmark dataset includes **new ISIC-DX diagnoses** not present in the original MILK10k dataset  
-- Some original diagnostic categories are omitted, particularly:
-  - Other benign  
-  - Other malignant  
-- Granular ISIC-DX labels are available **only in training supplemental metadata**  
+## 📤 ISIC Submission
+
+Predictions are saved as **ISIC-compliant CSV files**.
+
+- **Values:** Continuous probabilities ∈ [0, 1]  
+- **Total lesions:** 479  
+- **Missing values:** None  
+## 📁 Outputs
+
+### Trained Model
+- `skin_cancer_model.pth`
+
+### ISIC Submissions
+- `ISIC_submission_lesion_id.csv`  
+- `ISIC_submission_image.csv`  
+
 
 ---
 
