@@ -12,4 +12,37 @@ Accuracy: 75.94%
 Macro F1 Score: 0.2572
 
 ## 📊 Dataset Summary
-# Training Dataset (MILK10k)
+### Training Dataset (MILK10k)
+
+Lesions: 5,240
+Images: 10,480 JPEG images
+1 clinical close-up image per lesion
+1 dermatoscopic image per lesion
+Metadata entries: 10,480
+Supplemental metadata entries: 10,480
+Ground truth labels: 5,240 lesion diagnoses
+
+### Benchmark (Test) Dataset
+
+Lesions: 479
+Images: 958 JPEG images (clinical + dermoscopic pairs)
+Metadata entries: 958
+Ground truth: Hidden (used for leaderboard evaluation)
+
+
+## 🧬 Diagnostic Categories (11 Classes)
+
+Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.
+
+Abbreviation	Diagnostic Category
+AKIEC	Actinic keratosis / intraepidermal carcinoma
+BCC	Basal cell carcinoma
+BEN_OTH	Other benign proliferations (including collision tumors)
+BKL	Benign keratinocytic lesion
+DF	Dermatofibroma
+INF	Inflammatory and infectious conditions
+MAL_OTH	Other malignant proliferations
+MEL	Melanoma
+NV	Melanocytic nevus
+SCCKA	Squamous cell carcinoma / keratoacanthoma
+VASC	Vascular lesions and hemorrhage
