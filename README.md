@@ -142,9 +142,9 @@ Probability scores are provided for:
 - **BCEWithLogitsLoss** with class-wise positive weights
 
 ### Training Strategy
--Train classifier only (backbone frozen)  
--Unfreeze backbone  
--Full fine-tuning with early stopping  
+- Train classifier only (backbone frozen)  
+- Unfreeze backbone  
+- Full fine-tuning with early stopping  
 
 ---
 
