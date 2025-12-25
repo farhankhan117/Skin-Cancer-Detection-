@@ -216,7 +216,8 @@ Predictions are saved as **ISIC-compliant CSV files**.
 
 - **Values:** Continuous probabilities ∈ [0, 1]  
 - **Total lesions:** 479  
-- **Missing values:** None  
+- **Missing values:** None
+---
 ## 📁 Outputs
 
 ### Trained Model
