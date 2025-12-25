@@ -240,7 +240,7 @@ Predictions are saved as **ISIC-compliant CSV files**.
 
 An interactive **Streamlit-based web application** is provided to demonstrate real-time skin lesion classification using the trained deep learning model.
 
----
+
 
 ### 🔹 Purpose
 - Enable **end-to-end inference** on new skin lesion data
@@ -249,7 +249,7 @@ An interactive **Streamlit-based web application** is provided to demonstrate re
 - Display **class-wise probability predictions**
 - Provide an easy-to-use interface for non-technical users
 
----
+
 
 ### 🔹 App Features
 - Upload clinical close-up image
@@ -263,7 +263,7 @@ An interactive **Streamlit-based web application** is provided to demonstrate re
 - Model inference using the trained PyTorch model
 - Visualization of prediction probabilities for all 11 classes
 
----
+
 
 ### 🔹 Model Integration
 - Loads trained model:
