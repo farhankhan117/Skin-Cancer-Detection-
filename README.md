@@ -34,15 +34,21 @@ Ground truth: Hidden (used for leaderboard evaluation)
 
 Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.  
 
-Abbreviation	      |                           Diagnostic Category    
-AKIEC	                                        Actinic keratosis / intraepidermal carcinoma  
-BCC	                                          Basal cell carcinoma  
-BEN_OTH                                      	Other benign proliferations (including collision tumors)  
-BKL	                                          Benign keratinocytic lesion  
-DF                                           	Dermatofibroma  
-INF	                                          Inflammatory and infectious conditions  
-MAL_OTH                                      	Other malignant proliferations  
-MEL	                                          Melanoma  
-NV	                                           Melanocytic nevus  
-SCCKA	                                        Squamous cell carcinoma / keratoacanthoma  
-VASC	                                         Vascular lesions and hemorrhage  
+## 🧬 Diagnostic Categories (11 Classes)
+
+Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.
+
+| Abbreviation | Diagnostic Category |
+|-------------|---------------------|
+| AKIEC | Actinic keratosis / intraepidermal carcinoma |
+| BCC | Basal cell carcinoma |
+| BEN_OTH | Other benign proliferations (including collision tumors) |
+| BKL | Benign keratinocytic lesion |
+| DF | Dermatofibroma |
+| INF | Inflammatory and infectious conditions |
+| MAL_OTH | Other malignant proliferations |
+| MEL | Melanoma |
+| NV | Melanocytic nevus |
+| SCCKA | Squamous cell carcinoma / keratoacanthoma |
+| VASC | Vascular lesions and hemorrhage |
+
