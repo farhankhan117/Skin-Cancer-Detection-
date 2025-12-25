@@ -11,6 +11,16 @@ Performance Achieved (ISIC MILK10k Challenge):
 Accuracy: 75.94%
 Macro F1 Score: 0.2572
 
+## 🎯 Objective
+
+To develop a robust and clinically meaningful AI system that:
+
+- Learns from paired medical images  
+- Integrates clinical metadata  
+- Handles class imbalance effectively  
+- Performs fair evaluation using the **Macro F1 Score**  
+
+
 ## 📊 Dataset Summary
 ### Training Dataset (MILK10k)
 
@@ -195,9 +205,9 @@ Probability scores are provided for:
 ## 🧪 Test Inference (Steps 14–15)
 
 - **Test lesions:** 479 (blind benchmark)  
-- Missing metadata handled with default values  
-- Batch inference with **batch size = 16**  
-- Predictions submitted for leaderboard evaluation  
+-  Missing metadata handled with default values  
+-  Batch inference with **batch size = 16**  
+-  Predictions submitted for leaderboard evaluation  
 
 ---
 
