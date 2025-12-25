@@ -34,7 +34,7 @@ Ground truth: Hidden (used for leaderboard evaluation)
 
 Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.  
 
-Abbreviation	                                 Diagnostic Category    
+Abbreviation	      |                           Diagnostic Category    
 AKIEC	                                        Actinic keratosis / intraepidermal carcinoma  
 BCC	                                          Basal cell carcinoma  
 BEN_OTH                                      	Other benign proliferations (including collision tumors)  
