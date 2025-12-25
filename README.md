@@ -234,3 +234,40 @@ Predictions are saved as **ISIC-compliant CSV files**.
 
 - **License:** CC-BY-NC (Attribution, Non-Commercial)
 
+---
+
+## 🖥️ Streamlit App (`app.py`)
+
+An interactive **Streamlit-based web application** is provided to demonstrate real-time skin lesion classification using the trained deep learning model.
+
+---
+
+### 🔹 Purpose
+- Enable **end-to-end inference** on new skin lesion data
+- Accept **dual-modality images** (clinical + dermoscopic)
+- Integrate **patient metadata**
+- Display **class-wise probability predictions**
+- Provide an easy-to-use interface for non-technical users
+
+---
+
+### 🔹 App Features
+- Upload clinical close-up image
+- Upload dermatoscopic image
+- Input patient metadata:
+  - Age group
+  - Sex
+  - Skin tone (0–5 scale)
+  - Anatomical site
+- Automatic preprocessing and normalization
+- Model inference using the trained PyTorch model
+- Visualization of prediction probabilities for all 11 classes
+
+---
+
+### 🔹 Model Integration
+- Loads trained model:
+  ```text
+  skin_cancer_model.pth
+
+
