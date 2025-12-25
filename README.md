@@ -14,7 +14,7 @@ Macro F1 Score: 0.2572
 ## 📊 Dataset Summary
 ### Training Dataset (MILK10k)
 
-Lesions: 5,240
+Lesions: 5,240  
  Images: 10,480 JPEG images
 1 clinical close-up image per lesion
 1 dermatoscopic image per lesion
