@@ -2,7 +2,7 @@
  ## 📋 Project Overview
 
 This project presents a deep learning–based skin cancer detection system for multi class skin lesion diagnosis using the MILK10k / ISIC 2025 dataset.
-The model jointly analyzes dual modality images (clinical close-up + dermoscopic) along with patient metadata to classify lesions into 11 diagnostic categories.
+The model jointly analyzes dual modality images (clinical close-up + dermatoscopic) along with patient metadata to classify lesions into 11 diagnostic categories.
 
 By fusing visual features with clinical context, the system improves diagnostic robustness and outputs class wise probability scores, enabling reliable evaluation using the Macro F1 Score on a blind benchmark test set.
 
@@ -11,6 +11,7 @@ Performance Achieved (ISIC MILK10k Challenge):
 #### Accuracy: 75.94%
 #### Macro F1 Score: 0.2572
 
+---
 ## 🎯 Objective
 
 To develop a robust and clinically meaningful AI system that:
@@ -20,7 +21,7 @@ To develop a robust and clinically meaningful AI system that:
 - Handles class imbalance effectively  
 - Performs fair evaluation using the **Macro F1 Score**
 
-
+---
 
 ## 📊 Dataset Summary
 ### Training Dataset (MILK10k)
@@ -38,7 +39,7 @@ To develop a robust and clinically meaningful AI system that:
 - Metadata entries: 958  
 - Ground truth: Hidden (used for leaderboard evaluation)  
 
-
+---
 ## 🧬 Diagnostic Categories (11 Classes)
 
 Each lesion is classified into one of 11 diagnostic categories, and the model outputs probability scores for all classes.
@@ -57,7 +58,7 @@ Each lesion is classified into one of 11 diagnostic categories, and the model ou
 | SCCKA | Squamous cell carcinoma / keratoacanthoma |
 | VASC | Vascular lesions and hemorrhage |
 
-
+---
 ## 📥 Input Data Description
 
 Each lesion includes the following components:
@@ -82,7 +83,7 @@ Probability scores are provided for:
 - Skin tone (0 = very dark → 5 = very light)  
 - Anatomical site
 
-
+---
 ## ⚙️ Data Processing Pipeline
 
 **Input:** Raw images + CSV metadata  
@@ -101,26 +102,8 @@ Probability scores are provided for:
 ### Dataset Split
 - **Training:** 4,131 samples (80%)  
 - **Validation:** 1,033 samples (20%)  
-
-## 🧩 Custom Dataset & Augmentation
-
-### Custom Dataset Class
-- **SkinLesionDataset**
-
-### Image Transforms
-
-**Training:**
-- Resize (256 × 256)  
-- Random flip  
-- Rotation  
-- Color jitter  
-- Normalization  
-
-**Validation:**
-- Resize  
-- Normalization only  
-
-
+ 
+---
 ## 🧠 Model Architecture  
 ### Dual-EfficientNetV2-S with Metadata Fusion
 
@@ -151,7 +134,7 @@ Probability scores are provided for:
 - **Initially trainable parameters:** ~30.4K (classifier only)
 
 
-
+---
 
 ## ⚖️ Handling Class Imbalance
 
@@ -176,7 +159,7 @@ Probability scores are provided for:
 - **Image Size:** 256 × 256  
 - **Augmentation:** Flip, rotation, color jitter  
 
-
+---
 ## 📏 Evaluation Metric
 
 ### Primary Metric: Macro F1 Score
