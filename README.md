@@ -1,5 +1,5 @@
 # 🩺 Skin Cancer Detection with Dual-Modality Deep Learning
-## 📋 Project Overview
+ ## 📋 Project Overview
 
 This project presents a deep learning–based skin cancer detection system for multi class skin lesion diagnosis using the MILK10k / ISIC 2025 dataset.
 The model jointly analyzes dual modality images clinical close-up and dermoscopic along with patient metadata to classify lesions into 11 diagnostic categories.
@@ -15,7 +15,7 @@ Macro F1 Score: 0.2572
 ### Training Dataset (MILK10k)
 
 Lesions: 5,240
-Images: 10,480 JPEG images
+ Images: 10,480 JPEG images
 1 clinical close-up image per lesion
 1 dermatoscopic image per lesion
 Metadata entries: 10,480
