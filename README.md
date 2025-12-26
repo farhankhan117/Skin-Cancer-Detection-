@@ -1,4 +1,4 @@
-# 🩺 Skin Cancer Detection with Dual-Modality Deep Learning
+# 🩺 Skin Cancer Detection with Dual-Modality using Deep Learning
  ## 📋 Project Overview
 
 This project presents a deep learning–based skin cancer detection system for multi class skin lesion diagnosis using the MILK10k / ISIC 2025 dataset.
